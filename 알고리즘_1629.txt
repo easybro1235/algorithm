@@ -1,0 +1,15 @@
+함수의 형태
+-출력: a의 b제곱의 형태
+-입력: a, b
+-base condition: b=1일 때 a를 출력
+-함수의 행동: b=k일 때 val을 선언한 뒤 val에 b=k/2일 때의 값을 대입한 후, val을 제곱한 후 출력한다. 
+b=1일 때 a의 b제곱을 구할 수 있기에, b=k(일반항)일 때에도 구할 수 있게 된다.
+
+
+int func(int a, int b) {
+    if(b == 1) return a;
+    int val = func(a, b/2);
+    int fin = val * val; //b가 짝수일 때
+    if(b % 2 != 0) fin *= a; //b가 홀수일 때
+    return fin; 
+}
