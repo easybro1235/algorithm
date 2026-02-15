@@ -1,0 +1,53 @@
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Language specific
+## Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+## Java
+*.class
+*.jar
+*.war
+target/
+*.log
+
+## C/C++
+*.o
+*.exe
+*.out
+a.out
+
+## JavaScript/Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Compiled files
+*.exe
+*.out
+*.app
+*.dll
+*.so
+*.dylib
+
+# Temporary files
+/tmp/
+*.tmp
+*.temp
+
+# OS specific
+Thumbs.db
+.DS_Store
