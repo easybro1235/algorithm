@@ -3,18 +3,18 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: g++.exe 활성 파일 빌드", // 라벨 수정
-            "command": "g++.exe", // gcc -> g++로 변경 (필수!)
+            "label": "C/C++: g++.exe 활성 파일 빌드",
+            "command": "g++",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-std=c++17" // C++17 표준 사용 (백준 채점 기준과 맞춤)
+                "-std=c++17" 
             ],
             "options": {
-                "cwd": "C:/msys64/ucrt64/bin"
+                "cwd": "${fileDirname}"
             },
             "problemMatcher": [
                 "$gcc"
