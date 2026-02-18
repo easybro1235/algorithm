@@ -19,7 +19,7 @@ int main() {
 
     cin >> num;
     while (num--) {
-        cin >> input;
+        cin >> input; 
         if (input == 'L') {
             if (cursor != a.begin()) cursor--;
         } else if (input == 'D') {
@@ -32,7 +32,6 @@ int main() {
         } else if (input == 'P') {
             cin >> input2;
             a.insert(cursor, input2);
-            cursor++;
         }
     }
 
